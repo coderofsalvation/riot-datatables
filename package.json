@@ -1,0 +1,33 @@
+{
+  "name": "riot-datagrid",
+  "version": "1.0.0",
+  "description": "riotjs datagrid (using datatables.net)",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "riot src/tag tmp.tag.js --type coffeescript; css2js --css=node_modules/datatables/media/css/jquery.dataTables.min.css --out=tmp.datatables.css.js --template=vanilla_runner; cat tmp.datatables.css.js node_modules/datatables/media/js/jquery.dataTables.min.js tmp.tag.js | uglifyjs -o riot-datagrid.min.js; rm tmp.* ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderofsalvation/riot-datagrid.git"
+  },
+  "keywords": [
+    "datagrid",
+    "riotjs",
+    "datatables",
+    "table"
+  ],
+  "author": "coderofsalvation",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coderofsalvation/riot-datagrid/issues"
+  },
+  "homepage": "https://github.com/coderofsalvation/riot-datagrid#readme",
+  "devDependencies": {
+    "css2js": "^0.1.4",
+    "datatables": "^1.10.9"
+  }
+}
