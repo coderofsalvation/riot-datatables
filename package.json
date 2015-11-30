@@ -1,5 +1,5 @@
 {
-  "name": "riot-datagrid",
+  "name": "riot-datatables",
   "version": "1.0.0",
   "description": "riotjs datagrid (using datatables.net)",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "compile": "riot src/tag tmp.tag.js --type coffeescript; css2js --css=node_modules/datatables/media/css/jquery.dataTables.min.css --out=tmp.datatables.css.js --template=vanilla_runner; cat tmp.datatables.css.js node_modules/datatables/media/js/jquery.dataTables.min.js tmp.tag.js | uglifyjs -o riot-datagrid.min.js; rm tmp.* ",
+    "compile": "riot src/tag tmp.tag.js --type coffeescript; css2js --css=node_modules/datatables/media/css/jquery.dataTables.min.css --out=tmp.datatables.css.js --template=vanilla_runner; cat tmp.datatables.css.js node_modules/datatables/media/js/jquery.dataTables.min.js tmp.tag.js | uglifyjs -o riot-datatables.min.js; rm tmp.* ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
